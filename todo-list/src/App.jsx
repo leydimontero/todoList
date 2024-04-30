@@ -12,7 +12,7 @@ function App() {
         <h1>Lista de tareas</h1>
         <div className='counter-todos'>
           <h3>N° Tareas: 5</h3>
-          <h3>Pendientes: 5</h3>
+          <h3>Tareas Pendientes: 5</h3>
         </div>
         <div className='add-todo'>
           <h3>Agregar Tarea</h3>
