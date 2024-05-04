@@ -1,13 +1,35 @@
 import React from 'react';
+import { useForm } from '../hooks/useForm';
 
-const TodoAdd = () => {
+const TodoAdd = ({ handleNewTodo }) => {
+
+    const {description, onInputChange, onResetForm} = useForm({
+        description: '',
+    })
+
+    const onFormSumint = e => {
+        e.preventDefault();
+
+        if (description.length <= 1 ) return
+
+        let newTodo = {
+            id: new Date().getTime(),
+            description: description,
+            done: false
+        }
+
+        handleNewTodo(newTodo)
+        onResetForm()
+    }
+
     return (
-        <form>
+        <form onSubmit={onFormSumint}>
             <input 
             type="text" 
             className='input-add' 
             name='description' 
-            // value='Aprender AWS'  
+            value={description}  
+            onChange={onInputChange}
             placeholder='¿Qué quieres hacer?'
             
         />
