@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	
 }
 
 :root {
@@ -18,17 +19,23 @@ body {
 	margin: 40px auto;
 	display: flex;
 	justify-content: center;
+	background-image: linear-gradient(to right, #cea2f2, #96fff5);
 }
 
 .card-to-do {
 	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 	padding: 25px;
 	border-radius: 20px;
-	width: 700px;
+	width: 100%;
+	max-width: 700px;
+	margin: auto;
+	background-color: white;
+	
 }
 
 h1 {
 	text-align: center;
+	color: #9050c5;
 }
 
 .counter-todos {
@@ -42,7 +49,7 @@ h1 {
 }
 
 .counter-todos span {
-	color: #f29559;
+	color: #ea3300;
 	font-weight: 700;
 	font-size: 24px;
 	margin-left: 10px;
@@ -142,19 +149,20 @@ ul li form {
 
 form {
 	display: flex;
-	gap: 20px;
+	gap: 5px;
 }
 
 .add-todo h3 {
 	text-align: center;
 	margin-bottom: 40px;
 	font-size: 24px;
+	color: #9050c5;
 }
 
 .input-add {
 	border: none;
 	outline: none;
-	padding: 10px 20px;
+	padding: 10px 10px;
 	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
 	border-radius: 20px;
 	flex: 1;
@@ -167,7 +175,7 @@ form {
 	border: none;
 	background-color: var(--azul);
 	color: #fff;
-	padding: 5px 40px;
+	padding: 5px 20px;
 	border-radius: 20px;
 	font-family: inherit;
 	cursor: pointer;
@@ -178,3 +186,8 @@ form {
 	background-color: var(--azul-hover);
 }
 
+@media (max-width: 768px) {
+    .card-to-do {
+        width: 90%;
+    }
+}
