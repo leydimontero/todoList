@@ -24,7 +24,7 @@ body {
 
 .card-to-do {
 	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-	padding: 25px;
+	padding: 20px;
 	border-radius: 20px;
 	width: 100%;
 	max-width: 700px;
@@ -167,8 +167,8 @@ form {
 	border-radius: 20px;
 	flex: 1;
 	font-family: inherit;
-	font-size: 17px;
 	color: #555;
+	font-size: 15px;
 }
 
 .btn-add {
@@ -179,7 +179,7 @@ form {
 	border-radius: 20px;
 	font-family: inherit;
 	cursor: pointer;
-	font-size: 17px;
+	font-size: 15px;
 }
 
 .btn-add:hover {
