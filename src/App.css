@@ -148,7 +148,7 @@ ul li form {
 }
 
 form {
-	display: flex;
+	display: grid;
 	gap: 5px;
 }
 
@@ -175,11 +175,12 @@ form {
 	border: none;
 	background-color: var(--azul);
 	color: #fff;
-	padding: 5px 20px;
+	padding: 10px 20px;
 	border-radius: 20px;
 	font-family: inherit;
 	cursor: pointer;
 	font-size: 15px;
+	margin-top: 10px;
 }
 
 .btn-add:hover {
